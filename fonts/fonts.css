@@ -437,3 +437,15 @@
     src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+.inner.st2 {
+    position: relative; /* Ensure the div is positioned relatively */
+  }
+  
+  .inner.st2 h4 {
+    position: absolute; /* Position the text absolutely within the div */
+    top: -50%; /* Adjust the top position as needed (0 will place it at the top) */
+    left: -50%; /* Adjust the left position as needed (50% horizontally centers it) */
+    transform: translate(-65%, 60%);
+     /* Center the text horizontally */
+  }
