@@ -446,6 +446,6 @@
     position: absolute; /* Position the text absolutely within the div */
     top: -50%; /* Adjust the top position as needed (0 will place it at the top) */
     left: -50%; /* Adjust the left position as needed (50% horizontally centers it) */
-    transform: translate(-65%, 60%);
+    transform: translate(-65%, -125%);
      /* Center the text horizontally */
   }
