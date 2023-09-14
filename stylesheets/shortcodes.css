@@ -864,7 +864,7 @@ form .textarea label {
 
 @keyframes rotating {
     0% {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
 
     100% {
