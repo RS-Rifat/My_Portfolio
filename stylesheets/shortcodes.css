@@ -2110,9 +2110,9 @@ form .textarea label {
 
 .home-box .content-2 .content-right .inner.st3 h4 {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
-    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    font-size: 40px;
     line-height: 29px;
     color: var(--color-dark);
 }
