@@ -369,3 +369,35 @@
     wedo_onload();
   });
 })(jQuery);
+
+
+//My code
+const blogPaths = [
+  'blog-details-1',
+  'blog-details-2',
+  'blog-details-3',
+  'blog-details-4',
+  'blog-details-5',
+  'blog-details-6'
+];
+
+let currentPathIndex = 0;
+
+document.getElementById('previousBtn').addEventListener('click', () => {
+  if (currentPathIndex > 0) {
+      currentPathIndex--;
+      navigateToCurrentPath();
+  }
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+  if (currentPathIndex < blogPaths.length - 1) {
+      currentPathIndex++;
+      navigateToCurrentPath();
+  }
+});
+
+function navigateToCurrentPath() {
+  const currentPath = blogPaths[currentPathIndex];
+  window.location.href = currentPath;
+}
