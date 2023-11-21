@@ -370,3 +370,29 @@
   });
 })(jQuery);
 
+
+
+const blogTitles = ["blog-details-1", "blog-details-2", "blog-details-3", "blog-details-4", "blog-details-5", "blog-details-6"];
+const blogTitleElement = document.getElementById('blogTitle');
+const prevBlogButton = document.getElementById('prevBlog');
+const nextBlogButton = document.getElementById('nextBlog');
+
+prevBlogButton.addEventListener('click', () => {
+  if (currentBlogIndex > 0) {
+      currentBlogIndex--;
+      updateBlogTitle();
+  }
+});
+
+nextBlogButton.addEventListener('click', () => {
+  if (currentBlogIndex < blogTitles.length - 1) {
+      currentBlogIndex++;
+      updateBlogTitle();
+  }
+});
+
+function updateBlogTitle() {
+  blogTitleElement.textContent = blogTitles[currentBlogIndex];
+}
+
+updateBlogTitle();
